@@ -27,7 +27,7 @@ section#input-section {
 section#input-section input {
   background-color: transparent;
   width: 100px;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   border: 2px solid #b295ff;
   font-size: 2rem;
   font-weight: bold;
@@ -38,8 +38,26 @@ section#input-section input {
 }
 
 section#input-section button#convert-btn {
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 2rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+section#results {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section#results article {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.8rem 0.5rem;
+  margin: 1rem 0;
+  color: #434343;
+}
+
+section#results article h3 {
+  color: #5a537b;
 }
