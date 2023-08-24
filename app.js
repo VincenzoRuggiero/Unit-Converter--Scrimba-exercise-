@@ -9,9 +9,7 @@ const volumeRes = document.getElementById("volume-res");
 const massRes = document.getElementById("mass-res");
 
 convertBtn.addEventListener("click", function () {
-  metersFeetsConverter(inputEl.value);
-  litersGallonsConverter(inputEl.value);
-  kilogramsPoundsConverter(inputEl.value);
+  launchConversion(inputEl.value);
 });
 
 function metersFeetsConverter(num) {
@@ -39,4 +37,10 @@ function kilogramsPoundsConverter(num) {
   massRes.textContent = `${inputEl.value} = ${poundsResult.toFixed(
     3
   )} pounds | ${inputEl.value} pounds = ${kilogramsResult.toFixed(3)} kilos`;
+}
+
+function launchConversion(num) {
+  metersFeetsConverter(num);
+  litersGallonsConverter(num);
+  kilogramsPoundsConverter(num);
 }
